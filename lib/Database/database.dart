@@ -17,7 +17,7 @@ class DatabaseHelper {
   static DatabaseHelper instance = DatabaseHelper._();
 //initialize Db
   Database? db;
-  Future<Database> inilDb() async {
+  Future<Database> inilDb() async { 
     var docDirectory = await getApplicationDocumentsDirectory();
     var path = join(docDirectory.path, dbName);
     _oncreate(Database db, int version) {
